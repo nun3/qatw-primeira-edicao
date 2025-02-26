@@ -7,6 +7,7 @@ pipeline {
                 echo 'npm install'
             }
         }
+        
         stage('E2E Tests') {
             steps {
                 echo 'npx playwright test'
