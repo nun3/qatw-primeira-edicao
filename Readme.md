@@ -61,3 +61,12 @@ O projeto utiliza Docker Compose para gerenciar os serviços necessários para o
 
 ## 📄 Licença
 Este projeto está sob a licença MIT.
+
+--docker network ls (qatw-primeira-edicao_skynet)
+--criar arquivo Jenkinsfile (parametrizar)
+--docker pull mcr.microsoft.com/playwright:v1.50.1-noble
+--npm i allure-playwright
+--npm i allure-commandline 
+--pra usar o allure precisa do java instalado (java --version)
+--Adicionar Allure Commandline no Jenkins
+--Generate Pipeline Script ainda no jenkins (copia a instrução e cola no pipeline script vscode)

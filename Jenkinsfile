@@ -9,13 +9,14 @@ pipeline {
     stages {
         stage('Node.js Deps') {
             steps {
-                echo 'npm install'
+                sh 'npm install'
             }
         }
         
         stage('E2E Tests') {
             steps {
-                echo 'npx playwright test'
+                sh 'npx playwright test'
+                allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
             }
         }
 

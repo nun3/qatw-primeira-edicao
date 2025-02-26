@@ -17,5 +17,5 @@ return code;
 } 
 
 export const cleanJObs = async ()=>{
-    await queue.obliterate()
+    await queue.obliterate({force:'true'})
 }
