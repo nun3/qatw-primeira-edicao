@@ -70,3 +70,4 @@ Este projeto está sob a licença MIT.
 --pra usar o allure precisa do java instalado (java --version)
 --Adicionar Allure Commandline no Jenkins
 --Generate Pipeline Script ainda no jenkins (copia a instrução e cola no pipeline script vscode)
+--precisa ter JAVA_HOME / %JAVA_HOME%\bin /  no path do sistema  / C:\Program Files\Java\jdk-17
