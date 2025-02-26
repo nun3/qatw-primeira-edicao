@@ -3,12 +3,14 @@ import pgPromise from "pg-promise";
 const pgp = pgPromise()
 const db = pgp('postgresql://dba:dba@paybank-db:5432/UserDB')
 
-export async function obterCodigo2FA(){
+export async function obterCodigo2FA(cpf){
 const query = `
-    SELECT code
-	FROM public."TwoFactorCode" 
-    order by id desc 
-    limit 1;
+SELECT t.code
+	FROM public."TwoFactorCode" t
+	join public."User" u on u."id" = t."userId"
+	where u."cpf" = '${cpf}'
+	order by t.id desc
+	limit 1;
 `
 const result = await db.oneOrNone(query)
 return result.code
