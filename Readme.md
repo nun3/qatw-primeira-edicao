@@ -72,3 +72,6 @@ Este projeto está sob a licença MIT.
 --Generate Pipeline Script ainda no jenkins (copia a instrução e cola no pipeline script vscode)
 --precisa ter JAVA_HOME / %JAVA_HOME%\bin /  no path do sistema  / C:\Program Files\Java\jdk-17
 --precisa autenticar no docker, criar uma img especifica pra rodar alure papitodev/playwright-nj-v1.50.1-noble
+--docker compose down  encerra as imagens docker
+--docker compose up -d  cria as imagem do projeto
+
